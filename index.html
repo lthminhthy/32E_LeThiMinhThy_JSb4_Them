@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container mt-2">
+        <h3>Bài 5: Tính ngày tháng năm </h3>
+        <div class="form-group row">
+            <div class="col-6">
+                <input id="date_b5" class="form-control" type="date" placeholder="Nhập ngày tháng năm">
+            </div>
+
+        </div>
+        <button class="btn btn-success" id="btnNgayHomQua">Ngày hôm qua</button>
+        <button class="btn btn-success" id="btnNgayMai">Ngày mai</button>
+        <div class="alert alert-success mt-2" id="ketQua_b5">
+            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+        </div>
+        <hr>
+
+        <h3>Bài 6: Tính ngày</h3>
+        <div class="form-group row">
+            <div class="col-6">
+                <input id="month_b6" class="form-control" type="number" placeholder="Nhập tháng">
+            </div>
+            <div class="col-6">
+                <input id="year_b6" class="form-control" type="number" placeholder="Nhập năm">
+            </div>
+
+        </div>
+        <button class="btn btn-success" id="btnTinhNgay">Tính ngày</button>
+
+        <div class="alert alert-success mt-2" id="ketQua_b6">
+            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+        </div>
+        <hr>
+        <h3>Bài 7: Đọc số </h3>
+        <div class="form-group row">
+            <div class="col-6">
+                <input id="number_b7" class="form-control" type="number" placeholder="Nhập số">
+            </div>
+        </div>
+        <button class="btn btn-success" id="btnDoc">Đọc</button>
+
+        <div class="alert alert-success mt-2" id="ketQua_7">
+            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+        </div>
+        <hr>
+        <h3>Bài 8: Tinh sinh viên xa trường nhất </h3>
+        <div class="container">
+            <div class="col-6">
+                <h5>Sinh Viên 1</h5>
+            </div>
+            <div class="row">
+                <div class="col-4 ">
+                    <input type="text" class="form-control" id="Name1" placeholder="Nhập tên">
+                </div>
+                <div class="col-4 ">
+                    <input type="number" class="form-control " id="X1" placeholder="Nhập tọa độ x">
+                </div>
+                <div class="col-4 ">
+                    <input type="number" class="form-control " id="Y1" placeholder="Nhập tọa độ y">
+                </div>
+            </div>
+            <div class="col-6">
+                <h5>Sinh Viên 2</h5>
+            </div>
+            <div class="row">
+                <div class="col-4 ">
+                    <input type="text" class="form-control " id="Name2" placeholder="Nhập tên">
+                </div>
+                <div class="col-4 ">
+                    <input type="number" class="form-control " id="X2" placeholder="Nhập tọa độ x">
+                </div>
+                <div class="col-4 ">
+                    <input type="number" class="form-control " id="Y2" placeholder="Nhập tọa độ y">
+                </div>
+            </div>
+            <div class="col-6">
+                <h5>Sinh Viên 3</h5>
+            </div>
+            <div class="row">
+                <div class="col-4 ">
+                    <input type="text" class="form-control " id="Name3" placeholder="Nhập tên">
+                </div>
+                <div class="col-4 ">
+                    <input type="number" class="form-control " id="X3" placeholder="Nhập tọa độ x">
+                </div>
+                <div class="col-4 ">
+                    <input type="number" class="form-control " id="Y3" placeholder="Nhập tọa độ y">
+                </div>
+            </div>
+            <div class="col-6">
+                <h5>Trường học</h5>
+            </div>
+            <div class="row">
+                <div class="col-6 ">
+                    <input type="number" class="form-control " id="X4" placeholder="Nhập tọa độ x">
+                </div>
+                <div class="col-6 ">
+                    <input type="number" class="form-control " id="Y4" placeholder="Nhập tọa độ y">
+                </div>
+
+                <div class="col-6">
+                    <button class="btn btn-success mt-2" type="button" id="btnTim">Tìm</button>
+                </div>
+            </div>
+            <div class="alert alert-success mt-2" id="ketQua_b8">
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
